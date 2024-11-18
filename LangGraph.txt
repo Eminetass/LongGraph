@@ -1,0 +1,102 @@
+LangGraph Nedir?
+LangGraph, doğal dil işleme (NLP) teknikleri kullanarak metinlerden anlamlı bilgiler çıkaran ve bu bilgileri görselleştirilebilir bir bilgi grafiği (Knowledge Graph) haline getiren bir sistemdir. LangGraph, metinler arasındaki varlıkları (örneğin, kişiler, yerler, organizasyonlar) ve bu varlıklar arasındaki ilişkileri keşfetmeyi ve yapılandırmayı sağlar.
+
+Bu sistem, büyük dil modelleri (LLM), bilgi grafikleri ve sorgulanabilir grafik veri yapılarının birleşiminden oluşur. Örneğin, metinlerden bir hikâyedeki karakterler ve bu karakterlerin birbirleriyle nasıl ilişkili olduklarını çıkarmak ve görselleştirmek için LangGraph kullanılabilir.
+
+LangGraph Nasıl Çalışır?
+LangGraph'in çalışma prensibi 3 ana adıma dayanır:
+
+1. Doğal Dil İşleme (NLP)
+Metinler üzerinde analiz yapılarak şu bilgiler çıkarılır:
+
+Varlıklar (Entities): Metindeki önemli isimler, yerler, organizasyonlar vb.
+İlişkiler (Relations): Varlıklar arasındaki bağlantılar ve eylemler.
+Eylemler ve Özellikler: Varlıkların gerçekleştirdiği olaylar veya sahip oldukları nitelikler.
+2. Bilgi Grafiği (Knowledge Graph) Oluşturma
+Elde edilen varlıklar ve ilişkiler, bir grafik veri yapısı (Graph Data Structure) kullanılarak organize edilir:
+
+Düğümler (Nodes): Varlıklar (ör. "Alice", "Paris").
+Kenarlar (Edges): Düğümler arasındaki ilişkiler (ör. "Alice -> visited -> Paris").
+3. Görselleştirme ve Sorgulama
+Grafik yapı görselleştirilerek ilişkiler daha net bir şekilde analiz edilir.
+Kullanıcılar, grafik üzerinde sorgular yaparak belirli varlıklar veya ilişkiler hakkında bilgi alabilir.
+LangGraph Bileşenleri
+Doğal Dil İşleme (NLP) Araçları:
+
+Varlık Tanıma (Named Entity Recognition - NER)
+İlişki Çıkarımı (Relation Extraction)
+Bağımlılık Analizi (Dependency Parsing)
+Tokenizasyon (Metni kelimelere bölme)
+Grafik Yapısı ve Teknolojisi:
+
+NetworkX: Python'da grafik yapılar oluşturmak için kullanılan bir kütüphane.
+Neo4j: Büyük ölçekli bilgi grafikleri için kullanılan grafik veritabanı.
+Görselleştirme Araçları:
+
+Matplotlib veya Plotly: Grafiklerin görselleştirilmesi için.
+Neo4j'nin dahili görselleştirme araçları.
+LangGraph Örnek Uygulaması
+Örnek Senaryo:
+Bir metni analiz ederek karakterler, mekanlar ve olaylar arasındaki ilişkileri çıkarıp bir bilgi grafiği oluşturmak.
+
+Örnek Metin:
+
+css
+Kodu kopyala
+Alice met Bob in Paris. Bob invited Alice to a conference. Alice and Bob discussed artificial intelligence.
+1. Metni İşleme
+LangGraph, önce metindeki varlıkları ve ilişkileri çıkarmak için NLP araçlarını kullanır:
+
+Varlıklar (Entities):
+
+css
+Kodu kopyala
+[('Alice', 'PERSON'), ('Bob', 'PERSON'), ('Paris', 'GPE')]
+İlişkiler (Relations):
+
+css
+Kodu kopyala
+[('Alice', 'met', 'Bob'), ('Bob', 'invited', 'Alice'), ('Alice', 'discussed', 'artificial intelligence')]
+2. Bilgi Grafiği Oluşturma
+Elde edilen varlıklar ve ilişkiler, bir grafik yapısında organize edilir:
+
+Düğümler (Nodes):
+
+Alice
+Bob
+Paris
+artificial intelligence
+Kenarlar (Edges):
+
+Alice -> met -> Bob
+Bob -> invited -> Alice
+Alice -> discussed -> artificial intelligence
+3. Grafiği Görselleştirme
+Grafik aşağıdaki gibi görselleştirilebilir:
+
+scss
+Kodu kopyala
+Alice ----met----> Bob
+Bob ----invited----> Alice
+Alice ----discussed----> artificial intelligence
+         (Paris varlığı başka bir düğümde temsil ediliyor.)
+Bu görselleştirme, grafik üzerinde hangi varlıkların ve ilişkilerin olduğunu anlamayı kolaylaştırır.
+
+LangGraph'in Uygulama Alanları
+Araştırma ve Analiz:
+
+Büyük metin koleksiyonlarında ilişkileri analiz ederek araştırmalar yapmak.
+Akademik makalelerden veya belgelerden önemli bilgileri çıkarma.
+İşletme ve Pazarlama:
+
+Müşteri geri bildirimlerini analiz etmek.
+Markalar, ürünler ve müşteriler arasındaki ilişkileri görselleştirme.
+Hukuki ve Teknik Dokümantasyon:
+
+Karmaşık belgeleri analiz ederek anlaşılabilir bilgi grafikleri oluşturma.
+Eğitim ve Öğretim:
+
+Hikayeler veya ders materyallerindeki ilişkileri görselleştirerek öğrencilerin anlamasını kolaylaştırma.
+
+
+
