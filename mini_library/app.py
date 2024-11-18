@@ -10,10 +10,6 @@ relations = [('1984', 'written_by', 'George Orwell')]
 
 graph = build_graph(entities, relations)
 
-@app.get("/")
-def read_root():
-    return {"message": "LangGraph Web API'ye hoş geldiniz."}
-
 @app.get("/query")
 def query(entity: str, relation: str = None):
     results = query_graph(graph, entity, relation)
