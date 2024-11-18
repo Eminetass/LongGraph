@@ -1,5 +1,31 @@
 import spacy
-from graph_utils import build_graph, visualize_graph
+from graph_utils import build_graph, query_graph, save_to_neo4j, visualize_graph
+
+
+# Kullanıcıdan sorgu al ve grafiği sorgula
+query_entity = input("Sorgulamak istediğiniz varlık: ").strip()
+query_relation = input("Belirli bir ilişki (boş bırakılabilir): ").strip()
+
+if query_relation == "":
+    query_relation = None
+
+results = query_graph(graph, query_entity, query_relation)
+
+if results:
+    print(f"{query_entity} ile ilgili sonuçlar: {results}")
+else:
+    print(f"{query_entity} ile ilgili bir sonuç bulunamadı.")
+
+
+# Grafiği Neo4j'e kaydet
+neo4j_uri = "bolt://localhost:7687"
+neo4j_user = "neo4j"
+neo4j_password = "password"
+
+save_to_neo4j(graph, neo4j_uri, neo4j_user, neo4j_password)
+print("Bilgi grafiği Neo4j'e kaydedildi.")
+
+
 
 def process_text(file_path):
     """
