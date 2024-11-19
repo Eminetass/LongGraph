@@ -6,39 +6,42 @@ LANGGRAPH
 LangGraph, iş akışlarını grafik tabanlı bir şekilde modellemek için tasarlanmıştır. Doğal dil işleme (NLP) ve veri görselleştirme projelerinde
 etkili bir araçtır.
 
-Avantajları
-İş Akışı Odaklı: Grafik tabanlı iş akışlarını tanımlamak ve izlemek için idealdir.
-Modüler Yapı: Düğümler ve kenarlar kullanılarak süreçler kolayca modellenebilir.
-Doğal Dil İşleme: SpaCy gibi NLP kütüphaneleriyle entegre çalışır.
-Grafik Görselleştirme: NetworkX ile bilgi grafikleri oluşturma ve görselleştirme desteği sağlar.
-Kapsayıcı Ekosistem: LangChain ve diğer dil işleme araçlarıyla entegre çalışabilir.
-Zayıf Yanları
-Sınırlı Kapsam: NLP projelerinde iş akışı modelleme için optimize edilmiştir; geniş veri işleme veya özel kullanıcı arayüzleri için uygun 
+--- Avantajları---
+1. İş Akışı Odaklı: Grafik tabanlı iş akışlarını tanımlamak ve izlemek için idealdir.
+2. Modüler Yapı: Düğümler ve kenarlar kullanılarak süreçler kolayca modellenebilir.
+3. Doğal Dil İşleme: SpaCy gibi NLP kütüphaneleriyle entegre çalışır.
+4. Grafik Görselleştirme: NetworkX ile bilgi grafikleri oluşturma ve görselleştirme desteği sağlar.
+5. Kapsayıcı Ekosistem: LangChain ve diğer dil işleme araçlarıyla entegre çalışabilir.
+---Zayıf Yanları---
+1. Sınırlı Kapsam: NLP projelerinde iş akışı modelleme için optimize edilmiştir; geniş veri işleme veya özel kullanıcı arayüzleri için uygun 
 olmayabilir.
-Dokümantasyon ve Topluluk: Daha az bilinir ve daha küçük bir topluluğa sahiptir, bu nedenle hata ayıklama süreci daha uzun sürebilir.
+2. Dokümantasyon ve Topluluk: Daha az bilinir ve daha küçük bir topluluğa sahiptir, bu nedenle hata ayıklama süreci daha uzun sürebilir.
 
 
 CREWAI
 CrewAI, doğal dil işleme ve sohbet robotları için tasarlanmış bir araçtır. Özellikle diyalog tabanlı sistemler geliştirmede güçlüdür.
 
-Avantajları
-Diyalog Odaklı: Konuşma tabanlı iş akışları ve sohbet robotları için optimize edilmiştir.
-Kullanıcı Dostu: Kolay kullanımı ve önceden tanımlanmış modüller sunar.
-Gerçek Zamanlı İşleme: Hızlı yanıt verme ve gerçek zamanlı sohbet uygulamaları için idealdir.
-Zayıf Yanları
-İş Akışı Modelleme: LangGraph kadar güçlü bir iş akışı modelleme yapısı sunmaz.
-Grafik Görselleştirme Eksikliği: Bilgi grafikleri oluşturma ve görselleştirme yetenekleri sınırlıdır.
-Langflow
+---Avantajları---
+1. Diyalog Odaklı: Konuşma tabanlı iş akışları ve sohbet robotları için optimize edilmiştir.
+2. Kullanıcı Dostu: Kolay kullanımı ve önceden tanımlanmış modüller sunar.
+3. Gerçek Zamanlı İşleme: Hızlı yanıt verme ve gerçek zamanlı sohbet uygulamaları için idealdir.
+---Zayıf Yanları---
+1. İş Akışı Modelleme: LangGraph kadar güçlü bir iş akışı modelleme yapısı sunmaz.
+2. Grafik Görselleştirme Eksikliği: Bilgi grafikleri oluşturma ve görselleştirme yetenekleri sınırlıdır.
+
+
+
+LANGFLOW
 Langflow, LangChain'in işlevlerini bir web tabanlı kullanıcı arayüzüyle sunar. Kullanıcıların iş akışlarını sürükle ve bırak yöntemiyle 
 oluşturmasını sağlar.
 
-Avantajları
-Web Tabanlı Arayüz: Kullanıcılar için görsel ve interaktif bir iş akışı tasarım deneyimi sunar.
-LangChain Entegrasyonu: LangChain modelleriyle sıkı bir entegrasyon sağlar.
-Kullanıcı Dostu: Teknik olmayan kullanıcılar için erişilebilirlik sağlar.
-Zayıf Yanları
-Performans: Büyük projelerde performans sınırlamaları olabilir.
-Programatik Özelleştirme Eksikliği: Kod tabanlı özelleştirme daha zordur; görsel arayüz sınırlayıcı olabilir.
+----Avantajları---
+1. Web Tabanlı Arayüz: Kullanıcılar için görsel ve interaktif bir iş akışı tasarım deneyimi sunar.
+2. LangChain Entegrasyonu: LangChain modelleriyle sıkı bir entegrasyon sağlar.
+3. Kullanıcı Dostu: Teknik olmayan kullanıcılar için erişilebilirlik sağlar.
+---Zayıf Yanları---
+1. Performans: Büyük projelerde performans sınırlamaları olabilir.
+2. Programatik Özelleştirme Eksikliği: Kod tabanlı özelleştirme daha zordur; görsel arayüz sınırlayıcı olabilir.
 
 
 
@@ -46,15 +49,16 @@ Programatik Özelleştirme Eksikliği: Kod tabanlı özelleştirme daha zordur; 
 MAGENTIC
 Magentic, veri akışlarını ve iş akışlarını yönetmek için tasarlanmış bir araçtır. Büyük veri projelerinde güçlüdür.
 
-Avantajları
-Büyük Veri Desteği: Büyük ölçekli veri işleme projelerinde etkilidir.
-Çoklu Veri Kaynağı Desteği: Farklı veri kaynaklarından veri entegrasyonu yapabilir.
-Özelleştirilebilir İş Akışları: Karmaşık iş akışlarını modellemek için güçlüdür.
-Zayıf Yanları
-Ağır Yapı: Küçük veya orta ölçekli projeler için fazla karmaşık ve ağır olabilir.
-Eğitim Eğrisi: Öğrenmesi daha uzun sürebilir ve daha teknik bir bilgi gerektirir.
-MiniLibrary Projenizle İlgili Değerlendirme
+---Avantajları---
+1. Büyük Veri Desteği: Büyük ölçekli veri işleme projelerinde etkilidir.
+2. Çoklu Veri Kaynağı Desteği: Farklı veri kaynaklarından veri entegrasyonu yapabilir.
+3. Özelleştirilebilir İş Akışları: Karmaşık iş akışlarını modellemek için güçlüdür.
+---Zayıf Yanları---
+1. Ağır Yapı: Küçük veya orta ölçekli projeler için fazla karmaşık ve ağır olabilir.
+2. Eğitim Eğrisi: Öğrenmesi daha uzun sürebilir ve daha teknik bir bilgi gerektirir.
 
+
+MiniLibrary Projenizle İlgili Değerlendirme
 LangGraph Kullanımı
 LangGraph, MiniLibrary projeniz için ideal bir seçimdir çünkü:
 
