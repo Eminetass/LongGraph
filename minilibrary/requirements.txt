@@ -1,0 +1,15 @@
+spacy
+networkx
+matplotlib
+langgraph
+aiohttp
+langchain-core
+langchain-text-splitters
+langchain-anthropic
+langsmith
+numpy==1.26.0
+pydantic
+PyYAML
+requests
+SQLAlchemy
+tenacity
