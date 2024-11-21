@@ -42,7 +42,6 @@ Bir metni analiz ederek karakterler, mekanlar ve olaylar arasındaki ilişkileri
 Örnek Metin:
 
 css
-Kodu kopyala
 Alice met Bob in Paris. Bob invited Alice to a conference. Alice and Bob discussed artificial intelligence.
 1. Metni İşleme
 LangGraph, önce metindeki varlıkları ve ilişkileri çıkarmak için NLP araçlarını kullanır:

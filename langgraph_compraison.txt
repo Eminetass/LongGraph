@@ -78,6 +78,6 @@ Magentic ile Karşılaştırma
 Magentic, MiniLibrary gibi nispeten küçük bir proje için fazla ağırdır. Ancak, çok büyük veri kümeleriyle çalışmayı planlıyorsanız 
 değerlendirilebilir.
 Sonuç
-MiniLibrary projeniz için LangGraph, projeye en uygun araçtır. CrewAI ve Langflow, yalnızca proje kapsamında ek özellikler gerektiriyorsa
+MiniLibrary projemiz için LangGraph, projeye en uygun araçtır. CrewAI ve Langflow, yalnızca proje kapsamında ek özellikler gerektiriyorsa
  (ör. sohbet robotu, görsel iş akışı tasarımı) değerlendirilebilir. Magentic ise büyük ölçekli veri projeleri için uygundur ve mevcut
 projemizde gereksiz bir karmaşıklık katabilir.
